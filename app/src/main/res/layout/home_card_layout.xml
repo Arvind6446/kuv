@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/toast"
+            android:layout_width="335dp"
+            android:layout_height="67dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/home_card_background"
+            >
+            <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/bluetooth"
+                android:layout_alignParentStart="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/left_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="235dp"
+                    android:layout_height="15dp"
+                    android:text="@string/title"
+
+                    android:textAppearance="@style/title"
+                    android:gravity="top"
+                    />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="235dp"
+                    android:layout_height="16dp"
+                    android:text="@string/subtitle_card"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

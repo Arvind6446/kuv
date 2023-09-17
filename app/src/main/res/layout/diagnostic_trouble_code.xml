@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <!-- Drawer button on the left -->
+                <ImageButton
+                    android:id="@+id/btnDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="Open Drawer"/>
+
+                <!-- Centered text -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Diagnostic Trouble Code"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <!-- Plus icon on the right -->
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_search_24"
+                    android:tint="@color/primary"
+                    android:contentDescription="Open Drawer"/>
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/container_1"
+            android:layout_width="343dp"
+            android:layout_height="139dp"
+            android:layout_gravity="center"
+            android:background="@drawable/stat_background"
+            >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="P1121"
+        android:textAppearance="@style/km_hr"
+        android:textSize="24sp"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/code_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:text="Intake air temperature sensor"
+        android:textAppearance="@style/subtitle"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.74sp"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/primary"
+        android:text="Freeze Frame"
+        android:textAppearance="@style/description"
+        android:textSize="16sp"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.74sp"
+        android:gravity="top"
+        />
+</LinearLayout>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="13sp"
+                android:id="@+id/radio_one"
+                android:onClick="oneRadioButtonClicked"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_2"
+            android:layout_width="343dp"
+            android:layout_height="139dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stat_background"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/code_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="P1121"
+                    android:textAppearance="@style/km_hr"
+                    android:textSize="24sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/code_subtitle_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginStart="15dp"
+                    android:text="Intake air temperature sensor"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/code_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/primary"
+                    android:text="Freeze Frame"
+                    android:textAppearance="@style/description"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+            </LinearLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="13sp"
+                android:id="@+id/radio_two"
+                android:onClick="oneRadioButtonClicked"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

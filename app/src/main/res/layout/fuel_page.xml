@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <!-- Drawer button on the left -->
+                <ImageButton
+                    android:id="@+id/btnDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="Open Drawer"/>
+
+                <!-- Centered text -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Fuel"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <!-- Plus icon on the right -->
+                <TextView
+                    android:id="@+id/btnPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:textColor="#006FFD"
+                    android:text="ADD"
+                    android:contentDescription="Add"/>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:textSize="16dp"
+                android:text="Instant Mileage"/>
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/subtitle"
+                android:src="@drawable/odometer"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <RelativeLayout
+              android:id="@+id/frame_170_1"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:clipToOutline="true"
+              android:orientation="vertical"
+              android:background="@drawable/stat_background"
+              >
+              <TextView
+                  android:id="@+id/km_hr_1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="15dp"
+                  android:text="Fuel Cost"
+                  android:layout_marginTop="10dp"
+                  android:textAppearance="@style/km_hr"
+                  android:gravity="top"
+                  />
+              <TextView
+                  android:id="@+id/subtitle_1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/km_hr_1"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginStart="15dp"
+                  android:text="per litre (1.6 / L)"
+                  android:textAppearance="@style/subtitle"
+                  android:lineSpacingExtra="1sp"
+                  android:translationY="-0.74sp"
+                  android:gravity="top"
+                  />
+              <TextView
+                  android:id="@+id/aed"
+                  android:layout_width="93dp"
+                  android:layout_height="29dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_below="@id/subtitle_1"
+                  android:text="1.2 AED"
+                  android:textAppearance="@style/time_desc"
+                  />
+
+
+
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/frame_170_2"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:clipToOutline="true"
+              android:orientation="vertical"
+              android:background="@drawable/stat_background"
+              >
+              <TextView
+                  android:id="@+id/km_hr_2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="15dp"
+                  android:text="Fuel Consumption"
+                  android:layout_marginTop="10dp"
+                  android:textAppearance="@style/km_hr"
+                  android:gravity="top"
+                  />
+              <TextView
+                  android:id="@+id/subtitle_2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/km_hr_2"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginStart="15dp"
+                  android:text="Total"
+                  android:textAppearance="@style/subtitle"
+                  android:lineSpacingExtra="1sp"
+                  android:translationY="-0.74sp"
+                  android:gravity="top"
+                  />
+              <TextView
+                  android:id="@+id/aed_2"
+                  android:layout_width="93dp"
+                  android:layout_height="29dp"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_below="@id/subtitle_2"
+                  android:text="56 L"
+                  android:textAppearance="@style/time_desc"
+                  />
+
+
+
+
+          </RelativeLayout>
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/frame_170_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clipToOutline="true"
+                android:orientation="vertical"
+                android:background="@drawable/stat_background"
+                >
+                <TextView
+                    android:id="@+id/km_hr_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Gas Mileage"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/km_hr"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/subtitle_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/km_hr_3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="L"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/aed_3"
+                    android:layout_width="93dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/subtitle_3"
+                    android:text="120 L"
+                    android:textAppearance="@style/time_desc"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/frame_170_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clipToOutline="true"
+                android:orientation="vertical"
+                android:background="@drawable/stat_background"
+                >
+                <TextView
+                    android:id="@+id/km_hr_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Fuel Level"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/km_hr"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/subtitle_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/km_hr_4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="%"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/aed_4"
+                    android:layout_width="93dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/subtitle_4"
+                    android:text="50"
+                    android:textAppearance="@style/time_desc"
+                    />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

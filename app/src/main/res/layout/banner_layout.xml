@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:id="@+id/content"
+        android:background="#282424"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="311dp"
+        android:layout_height="190dp">
+        <TextView
+            android:id="@+id/mercedes"
+            android:layout_width="275dp"
+            android:layout_height="19dp"
+            android:layout_margin="5dp"
+            android:text="@string/mercedes"
+            android:textAppearance="@style/mercedes"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="275dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mercedes"
+            android:text="@string/description"
+            android:textAppearance="@style/description"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.74sp"
+            android:gravity="top"
+            />
+
+        <Button
+            android:id="@+id/viewMoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:text="@string/view_more"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#006FFD"
+            android:elevation="2dp"
+            android:stateListAnimator="@null"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/merc"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

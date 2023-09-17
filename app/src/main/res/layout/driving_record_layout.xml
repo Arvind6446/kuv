@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary"
+        android:text="Actions"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/primary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_remove_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/primary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_content_copy_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/primary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_person_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_person_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_person_fab"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_edit_24" />
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+                <!-- Drawer button on the left -->
+                <ImageButton
+                    android:id="@+id/btnDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="Open Drawer"/>
+
+                <!-- Centered text -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Driving Record"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:popupBackground="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:id="@+id/eventspinner"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/vertical_ca"
+            android:layout_width="334dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stat_background"
+            >
+
+            <TextView
+                android:id="@+id/no_driving_"
+                android:layout_width="115dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="109dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="79dp"
+                android:text="No driving record"
+                android:textAppearance="@style/title"
+                android:lineSpacingExtra="3sp"
+                android:translationY="-1.53sp"
+                android:gravity="top"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="20dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/time_subtitle_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="km"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/time_km_hr_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Drive Distance"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/km_hr"
+                    android:gravity="top"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/time_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time_km_hr"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="km"
+                    android:textAppearance="@style/subtitle"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.74sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/time_km_hr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Drive Distance"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/km_hr"
+                    android:gravity="top"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--kotlin code to hide / unhide floating-->
+
+<!--    import android.os.Bundle;-->
+<!--    import android.view.View;-->
+<!--    import android.widget.TextView;-->
+<!--    import android.widget.Toast;-->
+<!--    import androidx.appcompat.app.AppCompatActivity;-->
+<!--    import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;-->
+<!--    import com.google.android.material.floatingactionbutton.FloatingActionButton;-->
+
+<!--    class MainActivity : AppCompatActivity() {-->
+<!--    // Use the FloatingActionButton for all the add person-->
+<!--    // and add alarm-->
+<!--    var mAddAlarmFab: FloatingActionButton? = null-->
+<!--    var mAddPersonFab: FloatingActionButton? = null-->
+
+<!--    // Use the ExtendedFloatingActionButton to handle the-->
+<!--    // parent FAB-->
+<!--    var mAddFab: ExtendedFloatingActionButton? = null-->
+
+<!--    // These TextViews are taken to make visible and-->
+<!--    // invisible along with FABs except parent FAB's action-->
+<!--    // name-->
+<!--    var addAlarmActionText: TextView? = null-->
+<!--    var addPersonActionText: TextView? = null-->
+
+<!--    // to check whether sub FABs are visible or not-->
+<!--    var isAllFabsVisible: Boolean? = null-->
+<!--    override fun onCreate(savedInstanceState: Bundle?) {-->
+<!--    super.onCreate(savedInstanceState)-->
+<!--    setContentView(R.layout.activity_main)-->
+
+<!--    // Register all the FABs with their appropriate IDs-->
+<!--    // This FAB button is the Parent-->
+<!--    mAddFab = findViewById(R.id.add_fab)-->
+<!--    // FAB button-->
+<!--    mAddAlarmFab = findViewById(R.id.add_alarm_fab)-->
+<!--    mAddPersonFab = findViewById(R.id.add_person_fab)-->
+
+<!--    // Also register the action name text, of all the-->
+<!--    // FABs. except parent FAB action name text-->
+<!--    addAlarmActionText = findViewById(R.id.add_alarm_action_text)-->
+<!--    addPersonActionText = findViewById(R.id.add_person_action_text)-->
+
+<!--    // Now set all the FABs and all the action name-->
+<!--    // texts as GONE-->
+<!--    mAddAlarmFab.setVisibility(View.GONE)-->
+<!--    mAddPersonFab.setVisibility(View.GONE)-->
+<!--    addAlarmActionText.setVisibility(View.GONE)-->
+<!--    addPersonActionText.setVisibility(View.GONE)-->
+
+<!--    // make the boolean variable as false, as all the-->
+<!--    // action name texts and all the sub FABs are-->
+<!--    // invisible-->
+<!--    isAllFabsVisible = false-->
+
+<!--    // Set the Extended floating action button to-->
+<!--    // shrinked state initially-->
+<!--    mAddFab.shrink()-->
+
+<!--    // We will make all the FABs and action name texts-->
+<!--    // visible only when Parent FAB button is clicked So-->
+<!--    // we have to handle the Parent FAB button first, by-->
+<!--    // using setOnClickListener you can see below-->
+<!--    mAddFab.setOnClickListener(-->
+<!--    object : OnClickListener() {-->
+<!--    fun onClick(view: View?) {-->
+<!--    isAllFabsVisible = if (!isAllFabsVisible!!) {-->
+
+<!--    // when isAllFabsVisible becomes-->
+<!--    // true make all the action name-->
+<!--    // texts and FABs VISIBLE.-->
+<!--    mAddAlarmFab.show()-->
+<!--    mAddPersonFab.show()-->
+<!--    addAlarmActionText.setVisibility(View.VISIBLE)-->
+<!--    addPersonActionText.setVisibility(View.VISIBLE)-->
+
+<!--    // Now extend the parent FAB, as-->
+<!--    // user clicks on the shrinked-->
+<!--    // parent FAB-->
+<!--    mAddFab.extend()-->
+
+<!--    // make the boolean variable true as-->
+<!--    // we have set the sub FABs-->
+<!--    // visibility to GONE-->
+<!--    true-->
+<!--    } else {-->
+
+<!--    // when isAllFabsVisible becomes-->
+<!--    // true make all the action name-->
+<!--    // texts and FABs GONE.-->
+<!--    mAddAlarmFab.hide()-->
+<!--    mAddPersonFab.hide()-->
+<!--    addAlarmActionText.setVisibility(View.GONE)-->
+<!--    addPersonActionText.setVisibility(View.GONE)-->
+
+<!--    // Set the FAB to shrink after user-->
+<!--    // closes all the sub FABs-->
+<!--    mAddFab.shrink()-->
+
+<!--    // make the boolean variable false-->
+<!--    // as we have set the sub FABs-->
+<!--    // visibility to GONE-->
+<!--    false-->
+<!--    }-->
+<!--    }-->
+<!--    })-->
+
+<!--    // below is the sample action to handle add person-->
+<!--    // FAB. Here it shows simple Toast msg. The Toast-->
+<!--    // will be shown only when they are visible and only-->
+<!--    // when user clicks on them-->
+<!--    mAddPersonFab.setOnClickListener(-->
+<!--    object : OnClickListener() {-->
+<!--    fun onClick(view: View?) {-->
+<!--    Toast.makeText(this@MainActivity, "Person Added", Toast.LENGTH_SHORT).show()-->
+<!--    }-->
+<!--    })-->
+
+<!--    // below is the sample action to handle add alarm-->
+<!--    // FAB. Here it shows simple Toast msg The Toast-->
+<!--    // will be shown only when they are visible and only-->
+<!--    // when user clicks on them-->
+<!--    mAddAlarmFab.setOnClickListener(-->
+<!--    object : OnClickListener() {-->
+<!--    fun onClick(view: View?) {-->
+<!--    Toast.makeText(this@MainActivity, "Alarm Added", Toast.LENGTH_SHORT).show()-->
+<!--    }-->
+<!--    })-->
+<!--    }-->
+<!--    }-->
+
+
+
+
+

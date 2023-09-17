@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+   <androidx.appcompat.widget.Toolbar
+
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/black"
+       android:elevation="4dp"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+     <!-- Centered text -->
+     <TextView
+         android:id="@+id/toolbarTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Settings"
+         android:textColor="#fff"
+         android:textSize="18sp"
+         android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
+   </androidx.appcompat.widget.Toolbar>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context=".ProfileSettingFragment" >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/avatar" />
+
+    <ImageView
+        android:id="@+id/edit_profile_picture_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edit_round"
+        android:padding="2dp"
+        android:src="@drawable/baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@id/profile_picture"
+        app:layout_constraintEnd_toEndOf="@id/profile_picture"
+        app:tint="@color/white" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Lucas Scott"
+       android:layout_marginVertical="10dp"
+       android:layout_gravity="center_horizontal"
+       android:textColor="#fff"
+       android:textSize="18sp"
+       android:textStyle="bold"/>
+
+   <TextView
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:text="lucasscott3"
+       style="@style/subtitle"/>
+
+   <RelativeLayout
+
+       android:layout_width="343dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginVertical="16dp"
+       android:padding="8dp"
+       >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/subtitle"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_alignParentEnd="true"
+        />
+   </RelativeLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginHorizontal="30dp"
+       android:background="#494A50"
+       />
+   <RelativeLayout
+
+       android:layout_width="343dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginVertical="16dp"
+       android:padding="8dp"
+       >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/subtitle"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_alignParentEnd="true"
+        />
+   </RelativeLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginHorizontal="30dp"
+       android:background="#494A50"
+       />
+   <RelativeLayout
+
+       android:layout_width="343dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginVertical="16dp"
+       android:padding="8dp"
+       >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/subtitle"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_alignParentEnd="true"
+        />
+   </RelativeLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginHorizontal="30dp"
+       android:background="#494A50"
+       />
+   <RelativeLayout
+
+       android:layout_width="343dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginVertical="16dp"
+       android:padding="8dp"
+       >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy and Security"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/subtitle"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_alignParentEnd="true"
+        />
+   </RelativeLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginHorizontal="30dp"
+       android:background="#494A50"
+       />
+   <RelativeLayout
+
+       android:layout_width="343dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginVertical="16dp"
+       android:padding="8dp"
+       >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/subtitle"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_alignParentEnd="true"
+        />
+   </RelativeLayout>
+
+
+
+  </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

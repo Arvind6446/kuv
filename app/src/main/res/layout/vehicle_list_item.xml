@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_170"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:clipToOutline="true"
+        android:orientation="vertical"
+        android:background="@drawable/stat_background"
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/diagnostic_car"
+            />
+
+        <TextView
+            android:id="@+id/corolla_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@id/image"
+            android:text="Corolla Car"
+            android:textAppearance="@style/title"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/corolla_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
+            android:layout_below="@id/corolla_car"
+            android:text="VIN: Please enter the vehicle through OBD"
+            android:textAppearance="@style/subtitle"
+            android:gravity="top"
+            />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/corolla_car_info"
+      android:weightSum="4"
+      android:paddingVertical="16dp"
+      android:paddingHorizontal="8dp"
+      >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Manufacturer"
+              android:textAppearance="@style/subtitle"
+              android:gravity="top"
+              />
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Toyota"
+              android:textAppearance="@style/title"
+              android:gravity="top"
+              />
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Manufacturer"
+              android:textAppearance="@style/subtitle"
+              android:gravity="top"
+              />
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Toyota"
+              android:textAppearance="@style/title"
+              android:gravity="top"
+              />
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Manufacturer"
+              android:textAppearance="@style/subtitle"
+              android:gravity="top"
+              />
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Toyota"
+              android:textAppearance="@style/title"
+              android:gravity="top"
+              />
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:text="Manufacturer"
+              android:textAppearance="@style/subtitle"
+              android:gravity="top"
+              />
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Toyota"
+              android:textAppearance="@style/title"
+              android:gravity="top"
+              />
+
+
+      </LinearLayout>
+
+  </LinearLayout>
+     
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">kuv</string>
+    <string name="mercedes">Mercedes</string>
+            <string name="title_home">Home</string>
+    <string name="title_obd">OBD2</string>
+    <string name="title_ecu">ECU</string>
+    <string name="title_profile">Profile</string>
+    <string name="description">E Klasse, E-Coupe \n238, 2018 model</string>
+    <string name="view_more">View More</string>
+    <string name="km_hr">13.4 km/hr</string>
+    <string name="subtitle">Average Mileage</string>
+    <string name="distance">12,465 km</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="title">Connect Now</string>
+
+    <string name="subtitle_card">Use the OBD2 Adapter and get insights</string>
+</resources>
