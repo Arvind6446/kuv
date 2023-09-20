@@ -68,16 +68,23 @@
              android:layout_height="wrap_content"
              android:layout_gravity="center"
              android:src="@drawable/diagnostic_car"/>
-
-         <ExpandableListView
-             android:id="@+id/expandableListView"
-             android:layout_height="match_parent"
-             android:layout_width="match_parent"
-             android:layout_margin="10dp"
-             tools:listitem="@layout/diagnostic_item"
-             android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight"
-             android:divider="@android:color/darker_gray"
-             android:dividerHeight="0.5dp" />
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+         <include layout="@layout/diagnostic_item"/>
+<!--         <ExpandableListView-->
+<!--             android:id="@+id/expandableListView"-->
+<!--             android:layout_height="match_parent"-->
+<!--             android:layout_width="match_parent"-->
+<!--             android:layout_margin="10dp"-->
+<!--             tools:listitem="@layout/diagnostic_item"-->
+<!--             android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight"-->
+<!--             android:divider="@android:color/darker_gray"-->
+<!--             android:dividerHeight="0.5dp" />-->
       </LinearLayout>
 
 

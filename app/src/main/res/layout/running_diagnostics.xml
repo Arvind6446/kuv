@@ -143,10 +143,10 @@
                    android:layout_width="0dp"
                    android:layout_height="match_parent"
                    android:layout_weight="1"
-                   android:text="Connect"
+                   android:text="Cancel"
                    android:textColor="@color/primary"
                    android:textAllCaps="false"
-                   style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                   app:backgroundTint="@color/transparent"
                    app:strokeColor="@color/primary"
                    app:cornerRadius="10dp"
                    />

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+
+<!--    <data>-->
+
+<!--        <import type="android.view.View" />-->
+
+<!--        <variable-->
+<!--            name="viewModelOnboard"-->
+<!--            type="com.kuv.app.android.ui.onbording.OnbordingViewModel" />-->
+<!--    </data>-->
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:src="@drawable/onboarding_image"
+            android:scaleType="centerCrop"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/onboarding_dot"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/onboarding_undot"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/onboarding_undot"></androidx.appcompat.widget.AppCompatImageView>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect your car via bluetooth to get updates"
+                style="@style/teko_24_regular_titles"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="30dp"
+                android:textSize="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+            <TextView
+                android:id="@+id/registertv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enjoy these pre-made components and worry only about creating the best product ever."
+
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_color_profile"
+                android:textSize="15dp"></TextView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Next"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:gravity="center"
+                android:padding="@dimen/_13sdp"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!--
+</layout>-->

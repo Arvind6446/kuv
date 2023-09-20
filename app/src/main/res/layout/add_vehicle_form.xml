@@ -2,8 +2,9 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black">
+  >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,6 +40,7 @@
             android:layout_weight="1"
             android:hint="Vehicle Name"
             style="@style/drive_record_title"
+
             android:layout_marginVertical="16sp"
           app:endIconDrawable="@drawable/baseline_keyboard_arrow_down_24"
             app:endIconMode="custom"
@@ -53,6 +55,7 @@
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:textColor="#000000"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:padding="7dp"
                 android:textColorLink="#FFFFFF" />
 
@@ -79,6 +82,7 @@
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:textColor="#000000"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:padding="7dp"
                 android:textColorLink="#FFFFFF" />
 
@@ -103,6 +107,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:inputType="text"
                 android:textColor="#000000"
                 android:padding="7dp"
@@ -129,6 +134,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:inputType="text"
                 android:textColor="#000000"
                 android:padding="7dp"
@@ -156,6 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:textColor="#000000"
                 android:padding="7dp"
                 android:textColorLink="#FFFFFF" />
@@ -181,6 +188,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/grey_boarder_rectangle"
                 android:inputType="text"
                 android:textColor="#000000"
                 android:padding="7dp"

@@ -50,6 +50,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
     implementation("com.github.jasvir23007:Custom-Progress-Stages:1.1")
+    implementation("com.intuit.sdp:sdp-android:1.0.6")
+    implementation("com.github.aabhasr1:OtpView:v1.1.2-ktx")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

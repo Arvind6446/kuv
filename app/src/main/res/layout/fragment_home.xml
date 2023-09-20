@@ -35,7 +35,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <include layout="@layout/banner_layout"/>
+                    <include layout="@layout/banner_layout"
+                        android:id="@+id/addCar"
+                        />
                     <include layout="@layout/banner_layout"/>
                     <include layout="@layout/banner_layout"/>
                 </LinearLayout>
@@ -103,9 +105,13 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:gravity="center">
-               <include layout="@layout/quick_actions_item"/>
-               <include layout="@layout/quick_actions_item"/>
-               <include layout="@layout/quick_actions_item"/>
+               <include layout="@layout/quick_actions_item"
+                   android:id="@+id/dashboard"/>
+               <include layout="@layout/quick_actions_item"
+                   android:id="@+id/fuel"/>
+               <include layout="@layout/quick_actions_item"
+                   android:id="@+id/drivingRecord"
+                   />
            </LinearLayout>
 
 
@@ -113,7 +119,9 @@
 
 
         </LinearLayout>
-        <include layout="@layout/home_card_layout"/>
+        <include layout="@layout/home_card_layout"
+            android:id="@+id/diagnostic"
+            />
         <include layout="@layout/home_card_layout"/>
         <include layout="@layout/home_card_layout"/>
         <include layout="@layout/home_card_layout"/>

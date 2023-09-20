@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Kuv" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Base.Theme.Kuv" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textColorHint">@color/gray</item>
     </style>
 
     <style name="Theme.Kuv" parent="Base.Theme.Kuv" />
@@ -57,4 +58,5 @@
         <item name="colorControlActivated">@color/primary</item> <!-- activated color change as you wish -->
         <item name="android:textColor">#FFFF3F3C</item> <!-- checkbox text color -->
     </style>
+
 </resources>

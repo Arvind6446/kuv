@@ -1,5 +1,6 @@
 package com.kuv.ui.notifications
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.kuv.R
+import com.kuv.app.android.ConnectBlue
+import com.kuv.app.android.LanguageActivity
 import com.kuv.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -29,7 +32,10 @@ class NotificationsFragment : Fragment() {
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+        binding.connectButton.setOnClickListener(View.OnClickListener {
+            val i = Intent(activity, ConnectBlue::class.java)
+            startActivity(i)
+        })
         return root
     }
 

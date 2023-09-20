@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".LoginActivity">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+            <!-- Drawer button on the left -->
+            <ImageButton
+                android:id="@+id/btnDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Open Drawer"/>
+
+            <!-- Centered text -->
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="OTP"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Plus icon on the right -->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter confirmation code"
+            android:gravity="center"
+            style="@style/teko_24_regular_titles"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/_15sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/registertv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A 4-digit code was sent to
+lucasscott3@email.com"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/_14sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:height="60dp"
+            app:width="60dp"
+            app:bar_active_color="@color/primary_blue"
+            app:bar_inactive_color="@color/text_color_profile"
+            app:box_margin="@dimen/_5sdp"
+            app:length="4"
+            app:otp="1234"
+            app:otp_box_background="@drawable/otp_box"
+            app:otp_box_background_active="@drawable/bg_otp_box_active"
+            app:otp_box_background_error="@drawable/bg_otp_box_error"
+            app:otp_box_background_success="@drawable/bg_otp_box_success"
+            app:otp_box_background_inactive="@drawable/bg_box_otp_inactive"
+            app:otp_text_size="24dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resend Code"
+                android:gravity="center"
+                android:layout_above="@+id/btContinue"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColor="@color/primary_blue"
+                android:textSize="@dimen/_13sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Continue"
+                android:textSize="@dimen/_12sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:gravity="center"
+                android:padding="@dimen/_13sdp"></androidx.appcompat.widget.AppCompatButton>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -69,79 +69,63 @@
            android:layout_height="wrap_content"
            android:weightSum="2"
            >
-           <com.google.android.material.textfield.TextInputLayout
-               android:id="@+id/departureDateEditLoginWrapper"
+           <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/etName"
+               android:layout_height="@dimen/_43sdp"
                android:layout_width="match_parent"
+               android:imeOptions="actionNext"
+               android:textColor="@color/white"
+               android:gravity="center_vertical"
+               android:paddingLeft="@dimen/_10sdp"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:hint="Departure Date"
                android:layout_weight="1"
-               android:layout_height="60dp"
-               android:layout_margin="8dp"
-               android:hint="Departure date"
-               style="@style/drive_record_title"
-               app:boxCornerRadiusBottomEnd="8dp"
-               app:boxCornerRadiusTopEnd="8dp"
-               app:boxCornerRadiusBottomStart="8dp"
-               app:boxCornerRadiusTopStart="8dp">
+               android:textColorHint="@color/text_hint"
+               android:textSize="@dimen/_14sdp"
+               android:background="@drawable/grey_boarder_rectangle"
 
-               <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/departureDate"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:inputType="text"
-                   android:textColor="#000000"
-                   android:padding="7dp"
-                   android:textColorLink="#FFFFFF" />
+               android:inputType="text"/>
 
-           </com.google.android.material.textfield.TextInputLayout>
-
-           <com.google.android.material.textfield.TextInputLayout
-               android:id="@+id/departureTimeEditLoginWrapper"
+           <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/etName1"
+               android:layout_height="@dimen/_43sdp"
                android:layout_width="match_parent"
-               android:layout_height="60dp"
+               android:imeOptions="actionNext"
+               android:textColor="@color/white"
+               android:gravity="center_vertical"
+               android:paddingLeft="@dimen/_10sdp"
                android:layout_weight="1"
-               android:layout_margin="8dp"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
                android:hint="Departure Time"
-               style="@style/drive_record_title"
-               app:boxCornerRadiusBottomEnd="8dp"
-               app:boxCornerRadiusTopEnd="8dp"
-               app:boxCornerRadiusBottomStart="8dp"
-               app:boxCornerRadiusTopStart="8dp">
+               android:textColorHint="@color/text_hint"
+               android:textSize="@dimen/_14sdp"
+               android:background="@drawable/grey_boarder_rectangle"
 
-               <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/departureTime"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:inputType="text"
-                   android:textColor="#000000"
-                   android:padding="7dp"
-                   android:textColorLink="#FFFFFF" />
-
-           </com.google.android.material.textfield.TextInputLayout>
+               android:inputType="text"/>
 
        </LinearLayout>
 
-           <com.google.android.material.textfield.TextInputLayout
-               android:id="@+id/departureAddress"
+           <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/etName2"
+               android:layout_height="@dimen/_43sdp"
                android:layout_width="match_parent"
-               android:layout_height="60dp"
-               android:layout_weight="1"
-               android:layout_margin="8dp"
+               android:imeOptions="actionNext"
+               android:textColor="@color/white"
+               android:gravity="center_vertical"
+               android:paddingLeft="@dimen/_10sdp"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
                android:hint="Address"
-               style="@style/drive_record_title"
-               app:boxCornerRadiusBottomEnd="8dp"
-               app:boxCornerRadiusTopEnd="8dp"
-               app:boxCornerRadiusBottomStart="8dp"
-               app:boxCornerRadiusTopStart="8dp">
+               android:textColorHint="@color/text_hint"
+               android:textSize="@dimen/_14sdp"
+               android:background="@drawable/grey_boarder_rectangle"
 
-               <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/departureAddressEditLogin_3"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:inputType="text"
-                   android:textColor="#000000"
-                   android:padding="7dp"
-                   android:textColorLink="#FFFFFF" />
-
-           </com.google.android.material.textfield.TextInputLayout>
+               android:inputType="text"/>
        </LinearLayout>
 
         <LinearLayout
@@ -163,79 +147,63 @@
                 android:layout_height="wrap_content"
                 android:weightSum="2"
                 >
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/arrivalDateEditLoginWrapper"
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName4"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Arrival Date"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/grey_boarder_rectangle"
+
+                    android:inputType="text"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName5"
+                    android:layout_height="@dimen/_43sdp"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="60dp"
-                    android:layout_margin="8dp"
-                    android:hint="Arrival date"
-                    style="@style/drive_record_title"
-                    app:boxCornerRadiusBottomEnd="8dp"
-                    app:boxCornerRadiusTopEnd="8dp"
-                    app:boxCornerRadiusBottomStart="8dp"
-                    app:boxCornerRadiusTopStart="8dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/arrivalDateEditLogin"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="text"
-                        android:textColor="#000000"
-                        android:padding="7dp"
-                        android:textColorLink="#FFFFFF" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/arrivalTimeEditLoginWrapper"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:hint="Arrival Time"
-                    style="@style/drive_record_title"
-                    app:boxCornerRadiusBottomEnd="8dp"
-                    app:boxCornerRadiusTopEnd="8dp"
-                    app:boxCornerRadiusBottomStart="8dp"
-                    app:boxCornerRadiusTopStart="8dp">
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/grey_boarder_rectangle"
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/arrivalTimeEditLogin"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="text"
-                        android:textColor="#000000"
-                        android:padding="7dp"
-                        android:textColorLink="#FFFFFF" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:inputType="text"/>
 
             </LinearLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/arrivalAddressEditLoginWrapper"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName6"
+                android:layout_height="@dimen/_43sdp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
+                android:imeOptions="actionNext"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:hint="Address"
-                style="@style/drive_record_title"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/_14sdp"
+                android:background="@drawable/grey_boarder_rectangle"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/arrivalAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"
-                    android:textColor="#000000"
-                    android:padding="7dp"
-                    android:textColorLink="#FFFFFF" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:inputType="text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -252,84 +220,60 @@
                 android:gravity="top"
                 />
 
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/deptAccumulated"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName7"
+                android:layout_height="@dimen/_43sdp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
+                android:imeOptions="actionNext"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:hint="Departure accumulated distance"
-                style="@style/drive_record_title"
-                app:suffixText="Km"
-                app:suffixTextColor="@color/white"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/_14sdp"
+                android:background="@drawable/grey_boarder_rectangle"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/deptAccumulatedText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"
-                    android:textColor="#000000"
-                    android:padding="7dp"
-                    android:textColorLink="#FFFFFF" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/arrAccumulated"
+                android:inputType="text"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName8"
+                android:layout_height="@dimen/_43sdp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                app:suffixText="Km"
-                app:suffixTextColor="@color/white"
+                android:imeOptions="actionNext"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:hint="Arrival accumulated distance"
-                style="@style/drive_record_title"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/_14sdp"
+                android:background="@drawable/grey_boarder_rectangle"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/arrAccumulatedText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"
-                    android:textColor="#000000"
-                    android:padding="7dp"
-                    android:textColorLink="#FFFFFF" />
+                android:inputType="text"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/dist"
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName9"
+                android:layout_height="@dimen/_43sdp"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                app:suffixText="Km"
-                app:suffixTextColor="@color/white"
+                android:imeOptions="actionNext"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:hint="Distance"
-                style="@style/drive_record_title"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/_14sdp"
+                android:background="@drawable/grey_boarder_rectangle"
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/distText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="text"
-                    android:textColor="#000000"
-                    android:padding="7dp"
-                    android:textColorLink="#FFFFFF" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:inputType="text"/>
 
 
         </LinearLayout>
@@ -359,6 +303,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                android:layout_weight="1"
+                    app:checkedIconVisible="false"
+                    app:checkedIcon="@null"
+                    android:background="@drawable/button_layout"
                     android:backgroundTint="@color/primary"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -369,6 +316,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    app:checkedIconVisible="false"
+                    app:checkedIcon="@null"
+                    android:background="@drawable/button_layout"
                     android:backgroundTint="@color/primary"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -379,6 +329,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    app:checkedIconVisible="false"
+                    app:checkedIcon="@null"
+                    android:background="@drawable/button_layout"
                     android:backgroundTint="@color/primary"
                     android:textColor="@color/white"
                     android:textAlignment="center"
@@ -406,32 +359,25 @@
                 />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/memos"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName10"
+                android:layout_height="@dimen/_100sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                app:suffixText="Km"
-                app:suffixTextColor="@color/white"
+                android:imeOptions="actionNext"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:hint="Memos (Maximum 500 byte)"
-                style="@style/drive_record_title"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusTopStart="8dp">
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/_14sdp"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:background="@drawable/grey_boarder_rectangle"
+                />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/memosText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textMultiLine"
-                    android:minLines="8"
-                    android:textColor="#000000"
-                    android:padding="7dp"
-                    android:textColorLink="#FFFFFF" />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
 
 

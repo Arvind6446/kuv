@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".app.android.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:background="@drawable/splash_upper_image"></androidx.appcompat.widget.AppCompatImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                style="@style/teko_24_regular_titles"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etemail"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/grey_boarder_rectangle"
+
+                    android:inputType="text"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/grey_boarder_rectangle"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <ImageView
+                    android:id="@+id/show_pass_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:alpha=".5"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/password_hide" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@android:color/transparent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/show_pass_btn"/>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_blue"
+                android:textSize="13dp"></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginButton"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Login"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:gravity="center"
+                android:padding="@dimen/_13sdp"></androidx.appcompat.widget.AppCompatButton>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerLayout"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/registertv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not a member? "
+
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_hint"
+                    android:textSize="13dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register now"
+                    android:layout_toRightOf="@+id/registertv"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="13dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:background="@color/line_1"></LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or continue with            "
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_hint"
+                android:textSize="13dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/google_bt"></androidx.appcompat.widget.AppCompatImageView>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/apple_bt"></androidx.appcompat.widget.AppCompatImageView>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/facebook_bt"></androidx.appcompat.widget.AppCompatImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

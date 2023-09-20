@@ -95,17 +95,18 @@
                 android:textSize="16sp"
                 android:textColor="#71727A"
                 />
+            <include layout="@layout/bluetooth_image_slider"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:padding="8dp"
-                tools:orientation="horizontal"
-                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/bluetooth_image_slider"
-                android:scrollbars="none" />
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:padding="8dp"-->
+<!--                tools:orientation="horizontal"-->
+<!--                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                tools:listitem="@layout/bluetooth_image_slider"-->
+<!--                android:scrollbars="none" />-->
 
             <!-- add dot indicator by RecyclerView.ItemDecoration-->
 

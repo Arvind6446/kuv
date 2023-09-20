@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+            <!-- Drawer button on the left -->
+            <ImageButton
+                android:id="@+id/btnDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Open Drawer"/>
+
+            <!-- Centered text -->
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Plus icon on the right -->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        style="@style/teko_24_regular_titles"
+        android:layout_marginLeft="22dp"
+        android:textSize="20dp"></androidx.appcompat.widget.AppCompatTextView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/registertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account to get started "
+
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/_15sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_profile"
+        android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_width="match_parent"
+        android:imeOptions="actionNext"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Name"
+        android:textColorHint="@color/text_hint"
+        android:textSize="@dimen/_14sdp"
+        android:background="@drawable/grey_boarder_rectangle"
+
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_profile"
+        android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etemail"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_width="match_parent"
+        android:imeOptions="actionNext"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="name@email.com"
+        android:textColorHint="@color/text_hint"
+        android:textSize="@dimen/_14sdp"
+        android:background="@drawable/grey_boarder_rectangle"
+
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+
+        android:fontFamily="@font/helvetica_neue_bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_profile"
+        android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/grey_boarder_rectangle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+
+        <ImageView
+            android:id="@+id/show_pass_btn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:alpha=".5"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/password_hide" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@android:color/transparent"
+            android:hint="Create a Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/show_pass_btn"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/grey_boarder_rectangle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+
+        <ImageView
+            android:id="@+id/show_cpass_btn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:alpha=".5"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/password_hide" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@android:color/transparent"
+            android:hint="Create a Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/show_cpass_btn"/>
+
+    </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/checkbox_color"
+                    android:scaleX="1.70"
+                    android:scaleY="1.70"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+                <LinearLayout
+                    android:id="@+id/tandctext"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I've read and agree with the Terms and Conditions and the Privacy Policy."
+
+                        android:fontFamily="@font/helvetica_neue_bold"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/_12sdp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Sign Up"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/helvetica_neue_bold"
+                android:gravity="center"
+                android:padding="@dimen/_13sdp"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
