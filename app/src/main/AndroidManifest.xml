@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Kuv"
         tools:targetApi="31">
         <activity
+            android:name=".ui.monitoring.ui.MonitoringActivity"
+            android:exported="false" />
+        <activity
             android:name=".app.android.LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -21,19 +24,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.android.SignUpActivity"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".app.android.OtpActivity"/>
-        <activity android:name=".app.android.LanguageActivity"/>
-        <activity android:name=".app.android.ConnectBlue"/>
-        <activity android:name=".RecordActivity"/>
-        <activity android:name=".FuelActivity"/>
-        <activity android:name=".DashHomeActivity"/>
-        <activity android:name=".AddCarForm"/>
-        <activity android:name=".AddCarLayout"/>
-        <activity android:name=".RecordFormLayout"/>
-        <activity android:name=".DiagnosticLayout"/>
-
+        <activity android:name=".app.android.SignUpActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".app.android.OtpActivity" />
+        <activity android:name=".app.android.LanguageActivity" />
+        <activity android:name=".app.android.ConnectBlue" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".FuelActivity" />
+        <activity android:name=".DashHomeActivity" />
+        <activity android:name=".AddCarForm" />
+        <activity android:name=".AddCarLayout" />
+        <activity android:name=".RecordFormLayout" />
+        <activity android:name=".DiagnosticLayout" />
     </application>
 
 </manifest>

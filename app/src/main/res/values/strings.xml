@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">kuv</string>
     <string name="mercedes">Mercedes</string>
-            <string name="title_home">Home</string>
+    <string name="title_home">Home</string>
     <string name="title_obd">OBD2</string>
     <string name="title_ecu">ECU</string>
     <string name="title_profile">Profile</string>
@@ -15,4 +15,6 @@
     <string name="title">Connect Now</string>
 
     <string name="subtitle_card">Use the OBD2 Adapter and get insights</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

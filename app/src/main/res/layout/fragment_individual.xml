@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/home_card_background"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="235dp"
+                android:layout_height="20dp"
+                android:text="Fuel System 1 status"
+                android:textSize="16dp"
+                android:textAppearance="@style/title"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="235dp"
+                android:layout_height="16dp"
+                android:text="N/A"
+                android:textSize="18dp"
+                android:textAppearance="@style/subtitle"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

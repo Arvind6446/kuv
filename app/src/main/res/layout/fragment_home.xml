@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+
     tools:context=".ui.home.HomeFragment">
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,27 +27,29 @@
                 android:layout_marginBottom="10dp"
                 android:textSize="16dp"
                 android:text="Your Vehicle"/>
-
-            <ScrollView
-
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:foregroundGravity="center_vertical">
+
+                <!-- child view -->
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
                     android:orientation="horizontal">
+
+                    <!-- LinearLayout children -->
                     <include layout="@layout/banner_layout"
                         android:id="@+id/addCar"
                         />
                     <include layout="@layout/banner_layout"/>
                     <include layout="@layout/banner_layout"/>
+
                 </LinearLayout>
-
-
-            </ScrollView>
-
-
-
+            </HorizontalScrollView>
 
 
         </LinearLayout>
@@ -65,10 +68,11 @@
                 android:textSize="16dp"
                 android:text="Key Stats"/>
 
-            <ScrollView
-
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:foregroundGravity="center_vertical">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -79,18 +83,23 @@
                 </LinearLayout>
 
 
-            </ScrollView>
+            </HorizontalScrollView>
 
 
 
 
 
         </LinearLayout>
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quickItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:visibility="gone"
             android:orientation="vertical">
 
             <TextView
